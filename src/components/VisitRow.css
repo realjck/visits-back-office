@@ -1,0 +1,26 @@
+.visit-row {
+    background-color: #E8F2F4;
+    margin-bottom: 0.5em;
+    padding: 0.8em;
+    max-width: 50em;
+    margin-right: 1em;
+    display: flex;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+.visit-row:hover {
+    background-color: #fff;
+}
+.visit-row-date {
+    width: 8em;
+}
+.visit-row-name {
+    width: 37em;
+}
+.visit-row-duration {
+    width: 5em;
+}
+.visit-row-displayname {
+    font-weight: 700;
+    margin-right: 0.5em;
+}

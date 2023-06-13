@@ -2,6 +2,63 @@
   text-align: center;
 }
 
+.container {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back-office-header {
+  height: calc(20vh - 3.5em);
+  padding-top: 2em;
+}
+
 h1{
   text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  margin:0;
+  white-space: nowrap;
+}
+
+.back-office-header-navbar {
+  display: flex;
+  margin-top: 2em;
+}
+.back-office-header-navbar > div {
+  min-width: 5em;
+}
+
+.back-office-header-navbar img {
+  display: none;
+}
+.back-office-header-navbar > div.active > img {
+  display: inline;
+}
+.back-office-header-navbar > div.activeRev > img {
+  display: inline;
+  transform: rotate(180deg);
+}
+
+.back-office-header-date {
+  width: 8em;
+}
+.back-office-header-name {
+  width: 34em;
+}
+.back-office-header-duration {
+  width: 5em;
+}
+
+.back-office-header button {
+  font-size: 25px;
+  border: 0;
+  background-color: rgba(255,255,255,0);
+  cursor: pointer;
+}
+
+
+.back-office-body {
+  overflow-y: scroll;
+  max-height: 80vh;
 }
