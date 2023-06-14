@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/visits-back-office/static/css/main.923e88dc.css",
+    "main.js": "/visits-back-office/static/js/main.0b89697a.js",
+    "index.html": "/visits-back-office/index.html",
+    "main.923e88dc.css.map": "/visits-back-office/static/css/main.923e88dc.css.map",
+    "main.0b89697a.js.map": "/visits-back-office/static/js/main.0b89697a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.923e88dc.css",
+    "static/js/main.0b89697a.js"
+  ]
+}
