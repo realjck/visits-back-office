@@ -58,15 +58,15 @@ function App(){
   useEffect(() => {
     switch(sortState){
       case 0:
-        setVisitRows([...visitRows].sort((a, b) => b.created_at - a.created_at));
+        setVisitRows((v) => [...v].sort((a, b) => b.created_at - a.created_at));
       break;
 
       case 1:
-        setVisitRows([...visitRows].sort((a, b) => a.created_at - b.created_at));
+        setVisitRows((v) => [...v].sort((a, b) => a.created_at - b.created_at));
       break;
 
       case 2:
-        setVisitRows([...visitRows].sort((a, b) => {
+        setVisitRows((v) => [...v].sort((a, b) => {
           const nameA = a.userName.toUpperCase(); // Convertir en majuscules pour un tri insensible à la casse
           const nameB = b.userName.toUpperCase();
           return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
@@ -74,7 +74,7 @@ function App(){
       break;
 
       case 3:
-        setVisitRows([...visitRows].sort((a, b) => {
+        setVisitRows((v) => [...v].sort((a, b) => {
           const nameA = a.userName.toUpperCase(); // Convertir en majuscules pour un tri insensible à la casse
           const nameB = b.userName.toUpperCase();
           return (nameA < nameB) ? 1 : (nameA > nameB) ? -1 : 0;
@@ -82,17 +82,17 @@ function App(){
       break;
 
       case 4:
-        setVisitRows([...visitRows].sort((a, b) => b.durationTime - a.durationTime));
+        setVisitRows((v) => [...v].sort((a, b) => b.durationTime - a.durationTime));
       break;
 
       case 5:
-        setVisitRows([...visitRows].sort((a, b) => a.durationTime - b.durationTime));
+        setVisitRows((v) => [...v].sort((a, b) => a.durationTime - b.durationTime));
       break;
 
       default:break;
     }
     
-  }, [sortState, visitRows]);
+  }, [sortState]);
 
   const handleClickSortDate = () => {
     if (sortState === 0){
