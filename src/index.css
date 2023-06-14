@@ -3,6 +3,16 @@
 body {
   margin: 0;
   font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  
   background-color: #DDECEE;
   color: #707070;
   overflow-x: hidden;

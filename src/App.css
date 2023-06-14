@@ -9,8 +9,7 @@
 }
 
 .back-office-header {
-  height: calc(20vh - 3.5em);
-  padding-top: 2em;
+  padding: 2em 0 1em;
 }
 
 h1{
@@ -42,12 +41,15 @@ h1{
 
 .back-office-header-date {
   width: 8em;
+  cursor: pointer;
 }
 .back-office-header-name {
-  width: 34em;
+  width: 30em;
+  cursor: pointer;
 }
 .back-office-header-duration {
   width: 5em;
+  cursor: pointer;
 }
 
 .back-office-header button {
@@ -57,8 +59,7 @@ h1{
   cursor: pointer;
 }
 
-
 .back-office-body {
-  overflow-y: scroll;
-  max-height: 80vh;
+  /* overflow-y: scroll;
+  max-height: 80vh; */
 }
