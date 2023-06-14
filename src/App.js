@@ -55,10 +55,6 @@ function App(){
   // méthodes de tris
 
   useEffect(() => {
-
-  }, [visitRows])
-
-  useEffect(() => {
     switch(sortState){
       case 0:
         setVisitRows([...visitRows].sort((a, b) => b.created_at - a.created_at));
@@ -138,16 +134,17 @@ function App(){
             </div>
           </div>
           <div className='back-office-body'>
-          {visitRows.map(v => (
-            <VisitRow
-              key={v.id}
-              date={v.date}
-              displayName={v.displayName}
-              userName={v.userName}
-              duration={v.duration}
-              link={v.link}
-            />
-          ))}
+            {!(visits && visitors) ? <div className='back-office-loading'>fetching data</div> : ""}
+            {visitRows.map(v => (
+              <VisitRow
+                key={v.id}
+                date={v.date}
+                displayName={v.displayName}
+                userName={v.userName}
+                duration={v.duration}
+                link={v.link}
+              />
+            ))}
           </div>
           
         </div>
