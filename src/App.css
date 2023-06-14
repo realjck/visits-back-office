@@ -27,6 +27,9 @@ h1{
 .back-office-header-navbar > div {
   min-width: 5em;
 }
+.back-office-header-navbar > div:hover > button {
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
 
 .back-office-header-navbar .arrow {
   display: none;
