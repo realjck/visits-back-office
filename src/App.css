@@ -28,13 +28,13 @@ h1{
   min-width: 5em;
 }
 
-.back-office-header-navbar img {
+.back-office-header-navbar .arrow {
   display: none;
 }
-.back-office-header-navbar > div.active > img {
+.back-office-header-navbar > div.active > .arrow {
   display: inline;
 }
-.back-office-header-navbar > div.activeRev > img {
+.back-office-header-navbar > div.activeRev > .arrow {
   display: inline;
   transform: rotate(180deg);
 }

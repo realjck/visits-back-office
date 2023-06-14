@@ -2,6 +2,7 @@ import './App.css';
 import {useEffect, useState} from "react";
 import VisitRow from './components/VisitRow'
 import moment from 'moment/moment';
+import { ReactComponent as Arrow } from './arrow.svg';
 
 function App(){
   // state
@@ -123,13 +124,13 @@ function App(){
             <h1>visits back-office</h1>
             <div className='back-office-header-navbar'>
               <div className={sortState === 0 ? 'back-office-header-date active' : sortState === 1 ? 'back-office-header-date activeRev' : "back-office-header-date"} onClick={handleClickSortDate}>
-                <button>📅</button><img src="/arrow.svg" alt="arrow"/>
+                <button>📅</button><Arrow className='arrow'/>
               </div>
               <div className={sortState === 2 ? 'back-office-header-name active' : sortState === 3 ? 'back-office-header-name activeRev' : "back-office-header-name"} onClick={handleClickSortName}>
-                <button>👥</button><img src="/arrow.svg" alt="arrow"/>
+                <button>👥</button><Arrow className='arrow'/>
               </div>
               <div className={sortState === 4 ? 'back-office-header-duration active' : sortState === 5 ? 'back-office-header-duration activeRev' : "back-office-header-duration"} onClick={handleClickSortDuration}>
-                <button>⌚️</button><img src="/arrow.svg" alt="arrow"/>
+                <button>⌚️</button><Arrow className='arrow'/>
               </div>
             </div>
           </div>
