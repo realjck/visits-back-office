@@ -92,7 +92,7 @@ function App(){
       default:break;
     }
     
-  }, [sortState]);
+  }, [sortState, visitRows]);
 
   const handleClickSortDate = () => {
     if (sortState === 0){
