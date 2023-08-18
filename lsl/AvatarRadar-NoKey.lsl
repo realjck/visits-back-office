@@ -4,8 +4,8 @@
 
 string greeter_message = "Welcome _name_!";
 string farewell_message = "Adios _name_...";
-string visitors_api_url = "https://x8ki-letl-twmt.n7.xano.io/api:4rpcKqQg/visitors";
-string visit_api_url = "https://x8ki-letl-twmt.n7.xano.io/api:4rpcKqQg/visits";
+string visitors_api_url = "https://x8ki-letl-twmt.n7.xano.io/api:*****/visitors";
+string visit_api_url = "https://x8ki-letl-twmt.n7.xano.io/api:*****/visits";
 float range = 20;
 
 list ignoredResidents = ["c1cffbe5-d5ea-4fc7-b2b3-327f77a0cf9a",//amore bellios
