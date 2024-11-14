@@ -149,7 +149,7 @@ default {
                     // if people is away, then delete people from the list
                     // farewell(llList2Key(mobKeys, i));
                     string visit_id = llList2String(mobVisitId, i);
-                    http_request_visit_left = xrequest(visit_api_url+"/{visits_id}", ["visits_id", visit_id]);
+                    http_request_visit_left = xrequest(visit_api_url+"/"+(string)visit_id, []);
 
                     mobKeys = llDeleteSubList(mobKeys, i, i);
                     mobGreeted = llDeleteSubList(mobGreeted, i, i);
