@@ -37,6 +37,8 @@ function App(){
         const diff = moment.duration(y.diff(x), "milliseconds").humanize();
     
         const uname = visitor.username.replace(" Resident", "");
+
+        const ground = visit.ground ? "🌳" : "🏪";
     
         return {
           id: visit.id,
@@ -46,7 +48,8 @@ function App(){
           userName: uname,
           duration: diff,
           durationTime: visit.left_at - visit.created_at,
-          link: "https://my.secondlife.com/"+uname.replace(" ", ".")+"/#about_tab"
+          link: "https://my.secondlife.com/"+uname.replace(" ", ".")+"/#about_tab",
+          ground: ground
         }
       }));
 
@@ -144,6 +147,7 @@ function App(){
                 userName={v.userName}
                 duration={v.duration}
                 link={v.link}
+                ground={v.ground}
               />
             ))}
           </div>

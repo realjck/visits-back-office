@@ -14,6 +14,7 @@ export default function VisitRow(props){
                 <span className='visit-row-username'>({props.userName})</span>
             </div>
             <div className='visit-row-duration'>{props.duration}</div>
+            <div className='visit-row-ground'>{props.ground}</div>
         </div>
     );
 }
