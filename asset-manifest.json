@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/visits-back-office/static/css/main.4b2e94c1.css",
-    "main.js": "/visits-back-office/static/js/main.09eaa2d6.js",
+    "main.js": "/visits-back-office/static/js/main.bcf32478.js",
     "index.html": "/visits-back-office/index.html",
     "static/media/arrow.svg": "/visits-back-office/static/media/arrow.7e8556918b60dfc176d122b1508b8a32.svg",
     "main.4b2e94c1.css.map": "/visits-back-office/static/css/main.4b2e94c1.css.map",
-    "main.09eaa2d6.js.map": "/visits-back-office/static/js/main.09eaa2d6.js.map"
+    "main.bcf32478.js.map": "/visits-back-office/static/js/main.bcf32478.js.map"
   },
   "entrypoints": [
     "static/css/main.4b2e94c1.css",
-    "static/js/main.09eaa2d6.js"
+    "static/js/main.bcf32478.js"
   ]
 }
